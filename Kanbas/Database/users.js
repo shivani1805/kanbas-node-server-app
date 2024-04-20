@@ -17,7 +17,7 @@ export default [
     lastName: "Wayne",
     email: "bruce@wayne.com",
     dob: "1972-02-19",
-    role: "STUDENT",
+    role: "USER",
   },
   {
     _id: "123",
