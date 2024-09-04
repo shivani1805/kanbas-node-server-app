@@ -28,6 +28,8 @@ export default function UserRoutes(app) {
     if (currentUser!==null || currentUser!==undefined) {
       req.session.currentUser = currentUser;
       console.log("signin session",req.session);
+      res.setHeader("Access-Control-Allow-Origin", "*");
+      res.setHeader("Access-Control-Allow-Credentials", "true");
       res.json(currentUser);
     } else {
       res.sendStatus(401);
