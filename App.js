@@ -20,7 +20,11 @@ app.use(
     cors(
       {
       credentials: true,
-      origin: process.env.FRONTEND_URL
+      origin: process.env.FRONTEND_URL,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": true
+    },
     }
     )
    );
